@@ -2,10 +2,11 @@ Pod::Spec.new do |s|
 
   s.name         = 'SwiftLazy'
   s.version      = '1.0.0'
-  s.summary      = 'SwiftLazy - classes (Lazy, Provide) is intended for late initialization on iOS/macOS/tvOS/watchOS (Swift)'
+  s.summary      = 'SwiftLazy - classes (Lazy, Provide) is intended for late initialization on iOS/macOS/tvOS (Swift)'
 
   s.description  = <<-DESC
-  					SwiftLazy - classes (Lazy, Provide) is intended for late initialization on iOS/macOS/tvOS/watchOS (Swift)
+            Swift allows for lazy variables out-of-the-box, however they're fairly restricted.
+  					SwiftLazy - classes (Lazy, Provide) is intended for late initialization on iOS/macOS/tvOS (Swift)
             DESC
 
   s.homepage     = 'https://github.com/ivlevAstef/SwiftLazy'

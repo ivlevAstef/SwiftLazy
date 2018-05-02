@@ -14,6 +14,9 @@
 		BA6643E4207A00DE0032B4A7 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6643E3207A00DE0032B4A7 /* Provider.swift */; };
 		BA6643E5207A00DE0032B4A7 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6643E3207A00DE0032B4A7 /* Provider.swift */; };
 		BA6643E6207A00DE0032B4A7 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6643E3207A00DE0032B4A7 /* Provider.swift */; };
+		BAB8971620997930009274F8 /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8971520997930009274F8 /* Multithread.swift */; };
+		BAB8971720997930009274F8 /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8971520997930009274F8 /* Multithread.swift */; };
+		BAB8971820997930009274F8 /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8971520997930009274F8 /* Multithread.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,7 @@
 		BA6643DD2079FC240032B4A7 /* Lazy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
 		BA6643DE2079FC240032B4A7 /* SwiftLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftLazy.h; sourceTree = "<group>"; };
 		BA6643E3207A00DE0032B4A7 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		BAB8971520997930009274F8 /* Multithread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multithread.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 				BA6643E3207A00DE0032B4A7 /* Provider.swift */,
 				BA6643DE2079FC240032B4A7 /* SwiftLazy.h */,
 				169C0E1C1DA355A6001F0AD5 /* Info.plist */,
+				BAB8971520997930009274F8 /* Multithread.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -232,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6643E5207A00DE0032B4A7 /* Provider.swift in Sources */,
+				BAB8971720997930009274F8 /* Multithread.swift in Sources */,
 				BA6643E12079FD7D0032B4A7 /* Lazy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6643E6207A00DE0032B4A7 /* Provider.swift in Sources */,
+				BAB8971820997930009274F8 /* Multithread.swift in Sources */,
 				BA6643E22079FD7D0032B4A7 /* Lazy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6643E4207A00DE0032B4A7 /* Provider.swift in Sources */,
+				BAB8971620997930009274F8 /* Multithread.swift in Sources */,
 				BA6643DF2079FC240032B4A7 /* Lazy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +289,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALID_ARCHS = "x86_64 i386";
 			};
@@ -311,8 +319,8 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALID_ARCHS = "x86_64 i386";
 			};
@@ -519,7 +527,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -549,7 +557,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
