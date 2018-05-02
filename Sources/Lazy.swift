@@ -18,6 +18,7 @@ public final class Lazy<Value> {
       fastMonitor.lock()
 
       if let cache = cache {
+        fastMonitor.unlock()
         return cache
       }
 
