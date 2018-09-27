@@ -17,6 +17,15 @@
 		BAB8971620997930009274F8 /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8971520997930009274F8 /* Multithread.swift */; };
 		BAB8971720997930009274F8 /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8971520997930009274F8 /* Multithread.swift */; };
 		BAB8971820997930009274F8 /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8971520997930009274F8 /* Multithread.swift */; };
+		BADC36E5215CA5E000CEC778 /* ProviderArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36E4215CA5E000CEC778 /* ProviderArgs.swift */; };
+		BADC36E6215CA5E000CEC778 /* ProviderArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36E4215CA5E000CEC778 /* ProviderArgs.swift */; };
+		BADC36E7215CA5E000CEC778 /* ProviderArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36E4215CA5E000CEC778 /* ProviderArgs.swift */; };
+		BADC36E9215CA72B00CEC778 /* BaseLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36E8215CA72B00CEC778 /* BaseLazy.swift */; };
+		BADC36EA215CA72B00CEC778 /* BaseLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36E8215CA72B00CEC778 /* BaseLazy.swift */; };
+		BADC36EB215CA72B00CEC778 /* BaseLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36E8215CA72B00CEC778 /* BaseLazy.swift */; };
+		BADC36ED215CA73500CEC778 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36EC215CA73500CEC778 /* BaseProvider.swift */; };
+		BADC36EE215CA73500CEC778 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36EC215CA73500CEC778 /* BaseProvider.swift */; };
+		BADC36EF215CA73500CEC778 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC36EC215CA73500CEC778 /* BaseProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,9 @@
 		BA6643DE2079FC240032B4A7 /* SwiftLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftLazy.h; sourceTree = "<group>"; };
 		BA6643E3207A00DE0032B4A7 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		BAB8971520997930009274F8 /* Multithread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multithread.swift; sourceTree = "<group>"; };
+		BADC36E4215CA5E000CEC778 /* ProviderArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderArgs.swift; sourceTree = "<group>"; };
+		BADC36E8215CA72B00CEC778 /* BaseLazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLazy.swift; sourceTree = "<group>"; };
+		BADC36EC215CA73500CEC778 /* BaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +72,12 @@
 			children = (
 				BA6643DD2079FC240032B4A7 /* Lazy.swift */,
 				BA6643E3207A00DE0032B4A7 /* Provider.swift */,
+				BADC36E8215CA72B00CEC778 /* BaseLazy.swift */,
+				BADC36EC215CA73500CEC778 /* BaseProvider.swift */,
+				BADC36E4215CA5E000CEC778 /* ProviderArgs.swift */,
+				BAB8971520997930009274F8 /* Multithread.swift */,
 				BA6643DE2079FC240032B4A7 /* SwiftLazy.h */,
 				169C0E1C1DA355A6001F0AD5 /* Info.plist */,
-				BAB8971520997930009274F8 /* Multithread.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -236,8 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADC36EA215CA72B00CEC778 /* BaseLazy.swift in Sources */,
 				BA6643E5207A00DE0032B4A7 /* Provider.swift in Sources */,
+				BADC36E6215CA5E000CEC778 /* ProviderArgs.swift in Sources */,
 				BAB8971720997930009274F8 /* Multithread.swift in Sources */,
+				BADC36EE215CA73500CEC778 /* BaseProvider.swift in Sources */,
 				BA6643E12079FD7D0032B4A7 /* Lazy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,8 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADC36EB215CA72B00CEC778 /* BaseLazy.swift in Sources */,
 				BA6643E6207A00DE0032B4A7 /* Provider.swift in Sources */,
+				BADC36E7215CA5E000CEC778 /* ProviderArgs.swift in Sources */,
 				BAB8971820997930009274F8 /* Multithread.swift in Sources */,
+				BADC36EF215CA73500CEC778 /* BaseProvider.swift in Sources */,
 				BA6643E22079FD7D0032B4A7 /* Lazy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADC36E9215CA72B00CEC778 /* BaseLazy.swift in Sources */,
 				BA6643E4207A00DE0032B4A7 /* Provider.swift in Sources */,
+				BADC36E5215CA5E000CEC778 /* ProviderArgs.swift in Sources */,
 				BAB8971620997930009274F8 /* Multithread.swift in Sources */,
+				BADC36ED215CA73500CEC778 /* BaseProvider.swift in Sources */,
 				BA6643DF2079FC240032B4A7 /* Lazy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

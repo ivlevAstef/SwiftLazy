@@ -87,6 +87,16 @@ print(providerInt.value) // 2
 print(providerInt.value) // 3
 ```
 
+### Version 1.1.0
+
+Add Provider with arguments:
+```Swift
+let provider = Provider2<String, Int, Double> { "\($0) + \($1) = \($0 + $1)" }
+
+print(provider.value(10, 20.0)) // "10 + 20.0 = 30.0"
+```
+Support 1, 2, 3, 4, 5 arguments count.
+
 ## Install
 ###### Via CocoaPods.
 

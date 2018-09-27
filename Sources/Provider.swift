@@ -6,14 +6,14 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
-public final class Provider<Value> {
+public final class Provider<Value>: BaseProvider<Value> {
 
   /// The value for `self`.
   ///
   /// Made the value and return.
   public var value: Value {
     get {
-      return initializer()
+      return self.getValue(self.initializer)
     }
   }
 
@@ -46,20 +46,6 @@ prefix operator *
 /// Fast syntax for getting the value for Lazy.
 public prefix func *<T>(_ wrapper: Provider<T>) -> T {
   return wrapper.value
-}
-
-
-extension Provider: CustomStringConvertible, CustomDebugStringConvertible {
-
-  /// A textual representation of this instance.
-  public var description: String {
-    return "Provider(\(Value.self))"
-  }
-
-  /// A textual representation of this instance, suitable for debugging.
-  public var debugDescription: String {
-    return "Provider(\(Value.self))"
-  }
 }
 
 /// MARK: Compare

@@ -8,40 +8,17 @@
 
 import Foundation
 
-public final class Lazy<Value> {
+public final class Lazy<Value>: BaseThreadSaveLazy<Value> {
 
   /// The value for `self`.
   ///
   /// Getting the value or made and return.
   public var value: Value {
     get {
-      fastMonitor.lock()
-
-      if let cache = cache {
-        fastMonitor.unlock()
-        return cache
-      }
-
-      monitor.wait()
-      fastMonitor.unlock()
-
-      let result = initializer()
-
-      fastMonitor.lock()
-      monitor.signal()
-
-      cache = result
-
-      fastMonitor.unlock()
-
-      return result
+      return self.getValue(self.initializer)
     }
   }
 
-  private var monitor: DispatchSemaphore = DispatchSemaphore(value: 1)
-  private var fastMonitor: FastLock = makeFastLock()
-
-  fileprivate var cache: Value?
   private var initializer: () -> Value
 
   /// Create a lazy value.
@@ -55,18 +32,10 @@ public final class Lazy<Value> {
   }
 
   /// `true` if `self` was previously made.
-  public var wasMade: Bool {
-    fastMonitor.lock()
-    defer { fastMonitor.unlock() }
-    return cache != nil
-  }
+  public override var wasMade: Bool { return super.wasMade }
 
   /// clears the stored value.
-  public func clear() {
-    fastMonitor.lock()
-    cache = nil
-    fastMonitor.unlock()
-  }
+  public override func clear() { super.clear() }
 }
 
 
@@ -85,22 +54,6 @@ prefix operator *
 /// Fast syntax for getting the value for Lazy.
 public prefix func *<T>(_ wrapper: Lazy<T>) -> T {
   return wrapper.value
-}
-
-
-extension Lazy: CustomStringConvertible, CustomDebugStringConvertible {
-  
-  /// A textual representation of this instance.
-  public var description: String {
-    let value = cache.flatMap(String.init(describing:)) ?? "nil"
-    return "Lazy(\(value))"
-  }
-
-  /// A textual representation of this instance, suitable for debugging.
-  public var debugDescription: String {
-    let value = cache.flatMap(String.init(describing:)) ?? "nil"
-    return "Lazy(\(value): \(Value.self))"
-  }
 }
 
 /// MARK: Compare
