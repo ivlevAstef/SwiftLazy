@@ -7,7 +7,7 @@
 //
 
 
-internal class BaseThreadSaveLazy<Value> {
+public class BaseThreadSaveLazy<Value> {
 
   /// `true` if `self` was previously made.
   public var wasMade: Bool {

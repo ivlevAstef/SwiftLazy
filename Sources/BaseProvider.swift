@@ -7,7 +7,7 @@
 //
 
 
-internal class BaseProvider<Value> {
+public class BaseProvider<Value> {
 
   /// The value for `self`.
   ///
