@@ -6,8 +6,6 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
-import Foundation
-
 public final class Lazy<Value>: BaseThreadSaveLazy<Value> {
 
   /// The value for `self`.

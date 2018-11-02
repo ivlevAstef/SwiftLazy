@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1C5F38218C18250041442B /* SwiftLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6643DE2079FC240032B4A7 /* SwiftLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1C5F39218C18310041442B /* SwiftLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6643DE2079FC240032B4A7 /* SwiftLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA6643DF2079FC240032B4A7 /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6643DD2079FC240032B4A7 /* Lazy.swift */; };
 		BA6643E02079FC240032B4A7 /* SwiftLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6643DE2079FC240032B4A7 /* SwiftLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA6643E12079FD7D0032B4A7 /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6643DD2079FC240032B4A7 /* Lazy.swift */; };
@@ -107,6 +109,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1C5F39218C18310041442B /* SwiftLazy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +117,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1C5F38218C18250041442B /* SwiftLazy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +192,7 @@
 		A588754B1D0944AE00D6DE92 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Alexander Ivlev";
 				TargetAttributes = {
 					169C0DC11DA3501F001F0AD5 = {
@@ -430,12 +434,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -486,12 +492,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
