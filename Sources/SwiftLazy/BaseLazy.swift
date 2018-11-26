@@ -6,7 +6,6 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
-
 public class BaseThreadSaveLazy<Value> {
 
   /// `true` if `self` was previously made.
