@@ -6,6 +6,8 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
+import Foundation
+
 internal protocol FastLock {
   func lock()
   func unlock()
