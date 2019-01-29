@@ -72,12 +72,7 @@
 		16640A4C1D9E1E7B00707BFC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BA6643DD2079FC240032B4A7 /* Lazy.swift */,
-				BA6643E3207A00DE0032B4A7 /* Provider.swift */,
-				BADC36E8215CA72B00CEC778 /* BaseLazy.swift */,
-				BADC36EC215CA73500CEC778 /* BaseProvider.swift */,
-				BADC36E4215CA5E000CEC778 /* ProviderArgs.swift */,
-				BAB8971520997930009274F8 /* Multithread.swift */,
+				FD03854D21AC01D200A4EF60 /* SwiftLazy */,
 				BA6643DE2079FC240032B4A7 /* SwiftLazy.h */,
 				169C0E1C1DA355A6001F0AD5 /* Info.plist */,
 			);
@@ -100,6 +95,19 @@
 				169C0E4B1DA35CBE001F0AD5 /* SwiftLazy.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FD03854D21AC01D200A4EF60 /* SwiftLazy */ = {
+			isa = PBXGroup;
+			children = (
+				BA6643DD2079FC240032B4A7 /* Lazy.swift */,
+				BA6643E3207A00DE0032B4A7 /* Provider.swift */,
+				BADC36E8215CA72B00CEC778 /* BaseLazy.swift */,
+				BADC36EC215CA73500CEC778 /* BaseProvider.swift */,
+				BADC36E4215CA5E000CEC778 /* ProviderArgs.swift */,
+				BAB8971520997930009274F8 /* Multithread.swift */,
+			);
+			path = SwiftLazy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
