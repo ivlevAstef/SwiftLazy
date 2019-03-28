@@ -37,7 +37,7 @@ public final class Lazy<Value>: BaseThreadSaveLazy<Value> {
 }
 
 
-public extension Lazy {
+extension Lazy {
 
   /// Maps `transform` over `value` and returns a lazy result.
   public func map<T>(_ transform: @escaping (Value) -> T) -> Lazy<T> {

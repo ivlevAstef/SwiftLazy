@@ -31,7 +31,7 @@ public final class Provider<Value>: BaseProvider<Value> {
 }
 
 
-public extension Provider {
+extension Provider {
 
   /// Maps `transform` over `value` and returns a provider result.
   public func map<T>(_ transform: @escaping (Value) -> T) -> Provider<T> {
