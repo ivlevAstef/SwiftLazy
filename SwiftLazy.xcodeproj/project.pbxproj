@@ -31,7 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		163786AC231FB00700881F8B /* SwiftLazy_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		163786AC231FB00700881F8B /* SwiftLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		163786BB231FB04500881F8B /* Multithread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multithread.swift; sourceTree = "<group>"; };
 		163786BC231FB04500881F8B /* BaseLazy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLazy.swift; sourceTree = "<group>"; };
 		163786BD231FB04500881F8B /* ProviderArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderArgs.swift; sourceTree = "<group>"; };
@@ -40,8 +40,8 @@
 		163786C0231FB04500881F8B /* BaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProvider.swift; sourceTree = "<group>"; };
 		163786C1231FB04500881F8B /* SwiftLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftLazy.h; sourceTree = "<group>"; };
 		163786C2231FB04500881F8B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		163786DF231FB0BF00881F8B /* SwiftLazy_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		163786EC231FB0E800881F8B /* SwiftLazy_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		163786DF231FB0BF00881F8B /* SwiftLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		163786EC231FB0E800881F8B /* SwiftLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -56,9 +56,9 @@
 		163786AD231FB00700881F8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				163786AC231FB00700881F8B /* SwiftLazy_iOS.framework */,
-				163786DF231FB0BF00881F8B /* SwiftLazy_OSX.framework */,
-				163786EC231FB0E800881F8B /* SwiftLazy_tvOS.framework */,
+				163786AC231FB00700881F8B /* SwiftLazy.framework */,
+				163786DF231FB0BF00881F8B /* SwiftLazy.framework */,
+				163786EC231FB0E800881F8B /* SwiftLazy.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			);
 			name = "SwiftLazy-iOS";
 			productName = SwiftLazy;
-			productReference = 163786AC231FB00700881F8B /* SwiftLazy_iOS.framework */;
+			productReference = 163786AC231FB00700881F8B /* SwiftLazy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		163786DE231FB0BF00881F8B /* SwiftLazy-OSX */ = {
@@ -145,7 +145,7 @@
 			);
 			name = "SwiftLazy-OSX";
 			productName = "SwiftLazy-OSX";
-			productReference = 163786DF231FB0BF00881F8B /* SwiftLazy_OSX.framework */;
+			productReference = 163786DF231FB0BF00881F8B /* SwiftLazy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		163786EB231FB0E800881F8B /* SwiftLazy-tvOS */ = {
@@ -161,7 +161,7 @@
 			);
 			name = "SwiftLazy-tvOS";
 			productName = "SwiftLazy-tvOS";
-			productReference = 163786EC231FB0E800881F8B /* SwiftLazy_tvOS.framework */;
+			productReference = 163786EC231FB0E800881F8B /* SwiftLazy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -385,7 +385,8 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = SwiftLazy;
+				PRODUCT_NAME = SwiftLazy;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -409,7 +410,8 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = SwiftLazy;
+				PRODUCT_NAME = SwiftLazy;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,7 +438,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-OSX";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = SwiftLazy;
+				PRODUCT_NAME = SwiftLazy;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -463,7 +466,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-OSX";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = SwiftLazy;
+				PRODUCT_NAME = SwiftLazy;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -487,7 +491,8 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = SwiftLazy;
+				PRODUCT_NAME = SwiftLazy;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -513,7 +518,8 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = SwiftLazy;
+				PRODUCT_NAME = SwiftLazy;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
