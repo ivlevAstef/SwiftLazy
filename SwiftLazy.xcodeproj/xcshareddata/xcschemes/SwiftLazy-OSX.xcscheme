@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "163786AB231FB00700881F8B"
+               BlueprintIdentifier = "163786DE231FB0BF00881F8B"
                BuildableName = "SwiftLazy.framework"
-               BlueprintName = "SwiftLazy-iOS"
+               BlueprintName = "SwiftLazy-OSX"
                ReferencedContainer = "container:SwiftLazy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "163786AB231FB00700881F8B"
+            BlueprintIdentifier = "163786DE231FB0BF00881F8B"
             BuildableName = "SwiftLazy.framework"
-            BlueprintName = "SwiftLazy-iOS"
+            BlueprintName = "SwiftLazy-OSX"
             ReferencedContainer = "container:SwiftLazy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "163786AB231FB00700881F8B"
+            BlueprintIdentifier = "163786DE231FB0BF00881F8B"
             BuildableName = "SwiftLazy.framework"
-            BlueprintName = "SwiftLazy-iOS"
+            BlueprintName = "SwiftLazy-OSX"
             ReferencedContainer = "container:SwiftLazy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
