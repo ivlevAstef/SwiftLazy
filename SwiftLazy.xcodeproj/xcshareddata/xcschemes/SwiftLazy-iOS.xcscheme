@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1030"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A58875531D0944AE00D6DE92"
-               BuildableName = "SwiftLazy.framework"
+               BlueprintIdentifier = "163786AB231FB00700881F8B"
+               BuildableName = "SwiftLazy_iOS.framework"
                BlueprintName = "SwiftLazy-iOS"
                ReferencedContainer = "container:SwiftLazy.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A58875531D0944AE00D6DE92"
-            BuildableName = "SwiftLazy.framework"
+            BlueprintIdentifier = "163786AB231FB00700881F8B"
+            BuildableName = "SwiftLazy_iOS.framework"
             BlueprintName = "SwiftLazy-iOS"
             ReferencedContainer = "container:SwiftLazy.xcodeproj">
          </BuildableReference>
@@ -63,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A58875531D0944AE00D6DE92"
-            BuildableName = "SwiftLazy.framework"
+            BlueprintIdentifier = "163786AB231FB00700881F8B"
+            BuildableName = "SwiftLazy_iOS.framework"
             BlueprintName = "SwiftLazy-iOS"
             ReferencedContainer = "container:SwiftLazy.xcodeproj">
          </BuildableReference>
