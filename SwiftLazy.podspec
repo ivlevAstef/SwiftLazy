@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'SwiftLazy'
-  s.version      = '1.1.3'
+  s.version      = '1.1.5'
   s.summary      = 'SwiftLazy - classes (Lazy, Provide) is intended for late initialization on iOS/macOS/tvOS (Swift)'
 
   s.description  = <<-DESC
