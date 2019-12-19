@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'SwiftLazy'
-  s.version      = '1.1.5'
+  s.version      = '1.1.6'
   s.summary      = 'SwiftLazy - classes (Lazy, Provide) is intended for late initialization on iOS/macOS/tvOS (Swift)'
 
   s.description  = <<-DESC
@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
+  s.watchos.deployment_target = '2.0'
 
   s.source_files = 'Sources/SwiftLazy.h', 'Sources/**/*.swift'
   
