@@ -6,7 +6,7 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
-import Foundation
+import Dispatch
 
 public class BaseThreadSaveLazy<Value> {
 

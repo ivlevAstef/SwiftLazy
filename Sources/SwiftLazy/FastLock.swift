@@ -1,12 +1,10 @@
 //
-//  Multithread.swift
+//  FastLock.swift
 //  SwiftLazy
 //
 //  Created by Alexander Ivlev on 02.05.2018.
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
-
-import Foundation
 
 internal protocol FastLock {
   func lock()
@@ -35,6 +33,36 @@ internal func makeFastLock() -> FastLock {
   return SpinLock()
 }
 
+#if os(Linux)
+
+import GLibc
+
+private class SpinLock: FastLock {
+  private var monitor: pthread_spinlock_t = 0
+
+  init() {
+    if pthread_spin_init(&monitor, 0) != 0 {
+      fatalError("Spin lock initialization failed")
+    }
+  }
+
+  deinit {
+    pthread_spin_destroy(&monitor)
+  }
+
+  func lock() {
+    pthread_spin_lock(&monitor)
+  }
+
+  func unlock() {
+    pthread_spin_unlock(&monitor)
+  }
+}
+
+#else
+
+import Darwin
+
 @available(tvOS 10.0, *)
 @available(OSX 10.12, *)
 @available(iOS 10.0, *)
@@ -62,3 +90,5 @@ private class SpinLock: FastLock {
     OSSpinLockUnlock(&monitor)
   }
 }
+
+#endif

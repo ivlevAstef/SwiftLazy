@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		163786C3231FB04500881F8B /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BB231FB04500881F8B /* Multithread.swift */; };
+		163786C3231FB04500881F8B /* FastLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BB231FB04500881F8B /* FastLock.swift */; };
 		163786C4231FB04500881F8B /* BaseLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BC231FB04500881F8B /* BaseLazy.swift */; };
 		163786C5231FB04500881F8B /* ProviderArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BD231FB04500881F8B /* ProviderArgs.swift */; };
 		163786C6231FB04500881F8B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BE231FB04500881F8B /* Provider.swift */; };
 		163786C7231FB04500881F8B /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BF231FB04500881F8B /* Lazy.swift */; };
 		163786C8231FB04500881F8B /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786C0231FB04500881F8B /* BaseProvider.swift */; };
 		163786C9231FB04500881F8B /* SwiftLazy.h in Headers */ = {isa = PBXBuildFile; fileRef = 163786C1231FB04500881F8B /* SwiftLazy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		163786F4231FB15100881F8B /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BB231FB04500881F8B /* Multithread.swift */; };
+		163786F4231FB15100881F8B /* FastLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BB231FB04500881F8B /* FastLock.swift */; };
 		163786F5231FB15100881F8B /* BaseLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BC231FB04500881F8B /* BaseLazy.swift */; };
 		163786F6231FB15100881F8B /* ProviderArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BD231FB04500881F8B /* ProviderArgs.swift */; };
 		163786F7231FB15100881F8B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BE231FB04500881F8B /* Provider.swift */; };
 		163786F8231FB15100881F8B /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BF231FB04500881F8B /* Lazy.swift */; };
 		163786F9231FB15100881F8B /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786C0231FB04500881F8B /* BaseProvider.swift */; };
-		163786FA231FB15200881F8B /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BB231FB04500881F8B /* Multithread.swift */; };
+		163786FA231FB15200881F8B /* FastLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BB231FB04500881F8B /* FastLock.swift */; };
 		163786FB231FB15200881F8B /* BaseLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BC231FB04500881F8B /* BaseLazy.swift */; };
 		163786FC231FB15200881F8B /* ProviderArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BD231FB04500881F8B /* ProviderArgs.swift */; };
 		163786FD231FB15200881F8B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BE231FB04500881F8B /* Provider.swift */; };
@@ -32,14 +32,14 @@
 		ABDA28D923ABC08800BEB63F /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BE231FB04500881F8B /* Provider.swift */; };
 		ABDA28DA23ABC08800BEB63F /* ProviderArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BD231FB04500881F8B /* ProviderArgs.swift */; };
 		ABDA28DB23ABC08800BEB63F /* BaseLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BC231FB04500881F8B /* BaseLazy.swift */; };
-		ABDA28DC23ABC08800BEB63F /* Multithread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BB231FB04500881F8B /* Multithread.swift */; };
+		ABDA28DC23ABC08800BEB63F /* FastLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BB231FB04500881F8B /* FastLock.swift */; };
 		ABDA28DD23ABC08800BEB63F /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786BF231FB04500881F8B /* Lazy.swift */; };
 		ABDA28DE23ABC08800BEB63F /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163786C0231FB04500881F8B /* BaseProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		163786AC231FB00700881F8B /* SwiftLazy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLazy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		163786BB231FB04500881F8B /* Multithread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multithread.swift; sourceTree = "<group>"; };
+		163786BB231FB04500881F8B /* FastLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastLock.swift; sourceTree = "<group>"; };
 		163786BC231FB04500881F8B /* BaseLazy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLazy.swift; sourceTree = "<group>"; };
 		163786BD231FB04500881F8B /* ProviderArgs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderArgs.swift; sourceTree = "<group>"; };
 		163786BE231FB04500881F8B /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		163786BA231FB04500881F8B /* SwiftLazy */ = {
 			isa = PBXGroup;
 			children = (
-				163786BB231FB04500881F8B /* Multithread.swift */,
+				163786BB231FB04500881F8B /* FastLock.swift */,
 				163786BC231FB04500881F8B /* BaseLazy.swift */,
 				163786BD231FB04500881F8B /* ProviderArgs.swift */,
 				163786BE231FB04500881F8B /* Provider.swift */,
@@ -245,7 +245,7 @@
 				163786C6231FB04500881F8B /* Provider.swift in Sources */,
 				163786C5231FB04500881F8B /* ProviderArgs.swift in Sources */,
 				163786C4231FB04500881F8B /* BaseLazy.swift in Sources */,
-				163786C3231FB04500881F8B /* Multithread.swift in Sources */,
+				163786C3231FB04500881F8B /* FastLock.swift in Sources */,
 				163786C7231FB04500881F8B /* Lazy.swift in Sources */,
 				163786C8231FB04500881F8B /* BaseProvider.swift in Sources */,
 			);
@@ -258,7 +258,7 @@
 				163786F7231FB15100881F8B /* Provider.swift in Sources */,
 				163786F6231FB15100881F8B /* ProviderArgs.swift in Sources */,
 				163786F5231FB15100881F8B /* BaseLazy.swift in Sources */,
-				163786F4231FB15100881F8B /* Multithread.swift in Sources */,
+				163786F4231FB15100881F8B /* FastLock.swift in Sources */,
 				163786F8231FB15100881F8B /* Lazy.swift in Sources */,
 				163786F9231FB15100881F8B /* BaseProvider.swift in Sources */,
 			);
@@ -271,7 +271,7 @@
 				163786FD231FB15200881F8B /* Provider.swift in Sources */,
 				163786FC231FB15200881F8B /* ProviderArgs.swift in Sources */,
 				163786FB231FB15200881F8B /* BaseLazy.swift in Sources */,
-				163786FA231FB15200881F8B /* Multithread.swift in Sources */,
+				163786FA231FB15200881F8B /* FastLock.swift in Sources */,
 				163786FE231FB15200881F8B /* Lazy.swift in Sources */,
 				163786FF231FB15200881F8B /* BaseProvider.swift in Sources */,
 			);
@@ -284,7 +284,7 @@
 				ABDA28D923ABC08800BEB63F /* Provider.swift in Sources */,
 				ABDA28DA23ABC08800BEB63F /* ProviderArgs.swift in Sources */,
 				ABDA28DB23ABC08800BEB63F /* BaseLazy.swift in Sources */,
-				ABDA28DC23ABC08800BEB63F /* Multithread.swift in Sources */,
+				ABDA28DC23ABC08800BEB63F /* FastLock.swift in Sources */,
 				ABDA28DD23ABC08800BEB63F /* Lazy.swift in Sources */,
 				ABDA28DE23ABC08800BEB63F /* BaseProvider.swift in Sources */,
 			);
@@ -436,7 +436,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-iOS";
 				PRODUCT_MODULE_NAME = SwiftLazy;
 				PRODUCT_NAME = SwiftLazy;
@@ -466,7 +466,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-iOS";
 				PRODUCT_MODULE_NAME = SwiftLazy;
 				PRODUCT_NAME = SwiftLazy;
@@ -498,7 +498,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-OSX";
 				PRODUCT_MODULE_NAME = SwiftLazy;
 				PRODUCT_NAME = SwiftLazy;
@@ -530,7 +530,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-OSX";
 				PRODUCT_MODULE_NAME = SwiftLazy;
 				PRODUCT_NAME = SwiftLazy;
@@ -560,7 +560,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-tvOS";
 				PRODUCT_MODULE_NAME = SwiftLazy;
 				PRODUCT_NAME = SwiftLazy;
@@ -591,7 +591,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-tvOS";
 				PRODUCT_MODULE_NAME = SwiftLazy;
 				PRODUCT_NAME = SwiftLazy;
@@ -617,7 +617,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-WatchOS";
 				PRODUCT_MODULE_NAME = SwiftLazy;
 				PRODUCT_NAME = SwiftLazy;
@@ -644,7 +644,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sia.SwiftLazy-WatchOS";
 				PRODUCT_MODULE_NAME = SwiftLazy;
 				PRODUCT_NAME = SwiftLazy;

@@ -2,7 +2,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/github/license/ivlevAstef/SwiftLazy.svg?maxAge=2592000)](http://cocoapods.org/pods/SwiftLazy)
 [![Swift Version](https://img.shields.io/badge/Swift-3.0--5.0-F16D39.svg?style=flat)](https://developer.apple.com/swift)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftLazy.svg?style=flat)](http://cocoapods.org/pods/SwiftLazy)
+[![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg)](http://cocoapods.org/pods/SwiftLazy)
 
 # SwiftLazy
 Swift allows for lazy variables out-of-the-box, however they're fairly restricted.
