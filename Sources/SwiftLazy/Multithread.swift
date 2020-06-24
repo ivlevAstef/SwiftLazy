@@ -51,9 +51,9 @@ private class UnfairLock: FastLock {
   }
 }
 
-@available(tvOS 10.0, *)
-@available(OSX 10.12, *)
-@available(iOS 10.0, *)
+@available(tvOS 8.0, *)
+@available(OSX 10.10, *)
+@available(iOS 8.0, *)
 private class SpinLock: FastLock {
   private var monitor: OSSpinLock = OSSpinLock()
 
