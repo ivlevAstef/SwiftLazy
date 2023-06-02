@@ -1,7 +1,7 @@
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/SwiftLazy.svg?style=flat)](http://cocoapods.org/pods/SwiftLazy)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/github/license/ivlevAstef/SwiftLazy.svg?maxAge=2592000)](http://cocoapods.org/pods/SwiftLazy)
-[![Swift Version](https://img.shields.io/badge/Swift-3.0--5.0-F16D39.svg?style=flat)](https://developer.apple.com/swift)
+[![Swift Version](https://img.shields.io/badge/Swift-3.0--5.8-F16D39.svg?style=flat)](https://developer.apple.com/swift)
 [![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg)](http://cocoapods.org/pods/SwiftLazy)
 
 # SwiftLazy
@@ -103,12 +103,12 @@ Support 1, 2, 3, 4, 5 arguments count.
 To install SwiftLazy with CocoaPods, add the following lines to your Podfile: `pod 'SwiftLazy'`
 
 ###### Via Carthage.
-github "ivlevAstef/SwiftLazy" Swift (iOS8+,macOS10.10+,tvOS9+)
+github "ivlevAstef/SwiftLazy" 
 
 ### The library is integrated with DITranquillity
 
 ## Requirements
-iOS 8.0+,macOS 10.10+,tvOS 9.0+; ARC; Swift  >= 3.0
+iOS 11.0+,macOS 10.13+,tvOS 11.0+, watchOS 4.0+, Linux; ARC
 
 ## Feedback
 
