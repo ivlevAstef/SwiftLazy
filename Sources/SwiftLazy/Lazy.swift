@@ -6,7 +6,7 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
-public final class Lazy<Value>: BaseThreadSaveLazy<Value> {
+public final class Lazy<Value>: BaseThreadSaveLazy<Value>, @unchecked Sendable {
 
   /// The value for `self`.
   ///
@@ -17,7 +17,7 @@ public final class Lazy<Value>: BaseThreadSaveLazy<Value> {
     }
   }
 
-  private var initializer: () -> Value
+  private let initializer: () -> Value
 
   /// Create a lazy value.
   public init(_ initializer: @autoclosure @escaping () -> Value) {

@@ -8,7 +8,7 @@
 
 import Dispatch
 
-public class BaseThreadSaveLazy<Value> {
+public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
 
   /// `true` if `self` was previously made.
   public var wasMade: Bool {
@@ -38,7 +38,7 @@ public class BaseThreadSaveLazy<Value> {
     return result
   }
 
-  private var monitor: DispatchSemaphore = DispatchSemaphore(value: 1)
+  private let monitor: DispatchSemaphore = DispatchSemaphore(value: 1)
   private var cache: Value?
 }
 

@@ -7,7 +7,7 @@
 //
 
 
-public class BaseProvider<Value> {
+public class BaseProvider<Value>: @unchecked Sendable {
 
   /// The value for `self`.
   ///

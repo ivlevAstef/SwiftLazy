@@ -6,7 +6,7 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
-public final class Provider<Value>: BaseProvider<Value> {
+public final class Provider<Value>: BaseProvider<Value>, @unchecked Sendable {
 
   /// The value for `self`.
   ///
