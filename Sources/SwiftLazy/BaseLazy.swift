@@ -6,7 +6,7 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
-import Dispatch
+import Foundation
 
 public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
 
@@ -17,7 +17,9 @@ public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
 
   /// clears the stored value.
   public func clear() {
-    cache = nil
+    monitor.withLock {
+      cache = nil
+    }
   }
 
   internal func getValue(_ initializer: () -> Value) -> Value {
@@ -25,8 +27,8 @@ public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
       return cache
     }
 
-    monitor.wait()
-    defer { monitor.signal() }
+    monitor.lock()
+    defer { monitor.unlock() }
 
     if let cache = cache {
         return cache
@@ -38,7 +40,7 @@ public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
     return result
   }
 
-  private let monitor: DispatchSemaphore = DispatchSemaphore(value: 1)
+  private let monitor: NSLock = NSLock()
   private var cache: Value?
 }
 

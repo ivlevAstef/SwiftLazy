@@ -12,9 +12,7 @@ public final class Provider<Value>: BaseProvider<Value>, @unchecked Sendable {
   ///
   /// Made the value and return.
   public var value: Value {
-    get {
-      return self.getValue(self.initializer)
-    }
+    return self.getValue(self.initializer)
   }
 
   private var initializer: () -> Value

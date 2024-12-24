@@ -6,15 +6,14 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
+@dynamicMemberLookup
 public final class Lazy<Value>: BaseThreadSaveLazy<Value>, @unchecked Sendable {
 
   /// The value for `self`.
   ///
   /// Getting the value or made and return.
   public var value: Value {
-    get {
-      return self.getValue(self.initializer)
-    }
+    return getValue(initializer)
   }
 
   private let initializer: () -> Value
@@ -34,6 +33,12 @@ public final class Lazy<Value>: BaseThreadSaveLazy<Value>, @unchecked Sendable {
 
   /// clears the stored value.
   public override func clear() { super.clear() }
+
+  /// For use lazy value, without write `.value`
+  public subscript<R>(dynamicMember keyPath: ReferenceWritableKeyPath<Value,R>) -> R {
+    get { value[keyPath: keyPath] }
+    set { value[keyPath: keyPath] = newValue }
+  }
 }
 
 
