@@ -12,25 +12,38 @@ public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
 
   /// `true` if `self` was previously made.
   public var wasMade: Bool {
+    pthread_rwlock_rdlock(&lock)
+    defer { pthread_rwlock_unlock(&lock) }
     return cache != nil
+  }
+
+  init() {
+      pthread_rwlock_init(&lock, &attr)
+  }
+
+  deinit {
+    pthread_rwlock_destroy(&lock)
   }
 
   /// clears the stored value.
   public func clear() {
-    monitor.wait()
+    pthread_rwlock_wrlock(&lock)
+    defer { pthread_rwlock_unlock(&lock) }
     cache = nil
-    monitor.signal()
   }
 
   internal func getValue(_ initializer: () -> Value) -> Value {
-    if let cache = cache {
+    pthread_rwlock_rdlock(&lock)
+    if let cache {
+      pthread_rwlock_unlock(&lock)
       return cache
     }
+    pthread_rwlock_unlock(&lock)
 
-    monitor.wait()
-    defer { monitor.signal() }
+    pthread_rwlock_wrlock(&lock)
+    defer { pthread_rwlock_unlock(&lock) }
 
-    if let cache = cache {
+    if let cache {
         return cache
     }
 
@@ -40,7 +53,8 @@ public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
     return result
   }
 
-  private let monitor: DispatchSemaphore = DispatchSemaphore(value: 1)
+  private var lock = pthread_rwlock_t()
+  private var attr = pthread_rwlockattr_t()
   private var cache: Value?
 }
 
