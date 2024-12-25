@@ -12,39 +12,31 @@ public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
 
   /// `true` if `self` was previously made.
   public var wasMade: Bool {
-    pthread_rwlock_rdlock(&lock)
-    defer { pthread_rwlock_unlock(&lock) }
+    lock.readLock()
+    defer { lock.unlock() }
     return cache != nil
-  }
-
-  init() {
-      pthread_rwlock_init(&lock, &attr)
-  }
-
-  deinit {
-    pthread_rwlock_destroy(&lock)
   }
 
   /// clears the stored value.
   public func clear() {
-    pthread_rwlock_wrlock(&lock)
-    defer { pthread_rwlock_unlock(&lock) }
+    lock.writeLock()
+    defer { lock.unlock() }
     cache = nil
   }
 
   internal func getValue(_ initializer: () -> Value) -> Value {
-    pthread_rwlock_rdlock(&lock)
+    lock.readLock()
     if let cache {
-      pthread_rwlock_unlock(&lock)
+      lock.unlock()
       return cache
     }
-    pthread_rwlock_unlock(&lock)
+    lock.unlock()
 
-    pthread_rwlock_wrlock(&lock)
-    defer { pthread_rwlock_unlock(&lock) }
+    lock.writeLock()
+    defer { lock.unlock() }
 
     if let cache {
-        return cache
+      return cache
     }
 
     let result = initializer()
@@ -53,8 +45,8 @@ public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
     return result
   }
 
-  private var lock = pthread_rwlock_t()
-  private var attr = pthread_rwlockattr_t()
+  private let lock = RWLock()
+
   private var cache: Value?
 }
 
@@ -72,5 +64,29 @@ extension BaseThreadSaveLazy: CustomStringConvertible, CustomDebugStringConverti
     let cache = self.cache
     let value = cache.flatMap(String.init(describing:)) ?? "nil"
     return "Lazy(\(value): \(Value.self))"
+  }
+}
+
+private final class RWLock {
+  private var lock = pthread_rwlock_t()
+
+  init() {
+    pthread_rwlock_init(&lock, nil)
+  }
+
+  deinit {
+    pthread_rwlock_destroy(&lock)
+  }
+
+  func writeLock() {
+    pthread_rwlock_wrlock(&lock)
+  }
+
+  func readLock() {
+    pthread_rwlock_rdlock(&lock)
+  }
+
+  func unlock() {
+    pthread_rwlock_unlock(&lock)
   }
 }
