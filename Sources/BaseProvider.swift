@@ -6,7 +6,6 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
-
 public class BaseProvider<Value>: @unchecked Sendable {
 
   /// The value for `self`.

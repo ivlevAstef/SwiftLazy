@@ -52,8 +52,6 @@ extension Lazy {
   }
 }
 
-prefix operator *
-
 /// Fast syntax for getting the value for Lazy.
 public prefix func *<T>(_ wrapper: Lazy<T>) -> T {
   return wrapper.value
