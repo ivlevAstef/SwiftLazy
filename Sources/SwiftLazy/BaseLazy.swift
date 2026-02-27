@@ -6,6 +6,13 @@
 //  Copyright © 2018 Alexander Ivlev. All rights reserved.
 //
 
+#if canImport(Darwin)
+import Darwin
+#elseif canImport(Glibc)
+import Glibc
+#elseif canImport(Musl)
+import Musl
+#endif
 import Dispatch
 
 public class BaseThreadSaveLazy<Value>: @unchecked Sendable {
